@@ -1,0 +1,143 @@
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit main
+FINE: Created patient registry system.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientList add
+FINE: adding patient Heather|Smith|333-33-3333|New York|NY
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientList add
+FINE: adding patient Janice|Snealy|233-45-2222|Madison|WI
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientList add
+FINE: adding patient Herbert|Simon|122-45-2323|Atlanta|GA
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientList add
+FINE: adding patient Sally|Schnee|455-55-5555|NYC|NY
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit loadPatients
+FINE: Read patient file successfully.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit loadPatients
+FINE: patient Input stream closed.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit main
+FINE: Read patient information from patient file.
+Apr 29, 2019 8:52:15 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : Laura|Sandler|1245319599|oncology
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : Jeff|Goldman|1233355589|pediatrics
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : Sarah|Wasserman|1246129768|internal medicine
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : John|Choi|1367223575|internal medicine
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : Joe|Frog|444|oncology
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : Mary|Li|33333|oncology
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit loadDoctors
+FINE: Read doctor information successfully.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit loadDoctors
+FINE: Doctor Input stream closed.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit main
+FINE: Read doctor information from doctor file.
+Apr 29, 2019 8:52:15 PM cus1156.patients.VisitList add
+FINE: adding visit 233-45-2222|1233355589|11/23/2012
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.VisitList add
+FINE: adding visit 233-45-2222|1233355589|11/25/2012
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.VisitList add
+FINE: adding visit 122-45-2323|1245319599|05/15/2013
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.VisitList add
+FINE: adding visit 333-33-3333|1246129768|08/19/2013
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.VisitList add
+FINE: adding visit 122-45-2323|1367223575|10/21/2013
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.VisitList add
+FINE: adding visit 333-33-3333|33333|10/15/2019
+
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit loadVisits
+FINE: Read visit file successfully.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit loadVisits
+FINE: Visit Input stream closed.
+Apr 29, 2019 8:52:15 PM cus1156.patients.PatientRegSystemInit main
+FINE: Read visit information from visit file.
+Apr 29, 2019 8:52:22 PM cus1156.patients.DoctorList findByNPI
+FINE: Doctor not found with npi = 1
+Apr 29, 2019 8:52:22 PM cus1156.patients.DoctorList add
+FINE: Adding doctor to the list : 1|1|1|1
+
+Apr 29, 2019 8:52:22 PM cus1156.patients.Menu addDoctor
+INFO: Doctor added.
+Apr 29, 2019 8:52:33 PM cus1156.patients.PatientList findBySSN
+FINE: Patient not found with ssn :2
+Apr 29, 2019 8:52:33 PM cus1156.patients.PatientList add
+FINE: adding patient 2|2|2|2|2
+
+Apr 29, 2019 8:52:33 PM cus1156.patients.Menu addPatient
+INFO: Patient added successfully.
+Apr 29, 2019 8:52:49 PM cus1156.patients.VisitList add
+FINE: adding visit 2|1|01/01/0001
+
+Apr 29, 2019 8:52:49 PM cus1156.patients.Menu addVisit
+INFO: Visit added.
+Apr 29, 2019 8:53:00 PM cus1156.patients.VisitList findByDate
+FINE: Found visit by date: [2|1|01/01/0001
+]
+Apr 29, 2019 8:53:00 PM cus1156.patients.PatientList findBySSN
+FINE: Patient found with ssn [2] : 2|2|2|2|2
+
+Apr 29, 2019 8:53:00 PM cus1156.patients.DoctorList findByNPI
+FINE: Doctor record found with npi[1]: 1|1|1|1
+
+Apr 29, 2019 8:53:00 PM cus1156.patients.PatientRegSystem getVisitsByDate
+FINE: Getting Visits by date [Sat Jan 01 00:00:00 IST 1] : [2|2|2|2|2|1|1|1|1|Sat Jan 01 00:00:00 IST 1
+]
+Apr 29, 2019 8:53:11 PM cus1156.patients.VisitList findBySSN
+FINE: Visits found by SSN [1] : []
+Apr 29, 2019 8:53:11 PM cus1156.patients.PatientRegSystem getVisitsByPatient
+FINE: Getting sorted visits by patients with SSN [1]: []
+Apr 29, 2019 8:53:11 PM cus1156.patients.Menu displayVisitListForPatient
+INFO: That patient has not visited any of our providers
+Apr 29, 2019 8:53:17 PM cus1156.patients.VisitList findBySSN
+FINE: Visits found by SSN [2] : [2|1|01/01/0001
+]
+Apr 29, 2019 8:53:17 PM cus1156.patients.PatientList findBySSN
+FINE: Patient found with ssn [2] : 2|2|2|2|2
+
+Apr 29, 2019 8:53:17 PM cus1156.patients.DoctorList findByNPI
+FINE: Doctor record found with npi[1]: 1|1|1|1
+
+Apr 29, 2019 8:53:17 PM cus1156.patients.PatientRegSystem getVisitsByPatient
+FINE: Getting sorted visits by patients with SSN [2]: [2|2|2|2|2|1|1|1|1|Sat Jan 01 00:00:00 IST 1
+]
+Apr 29, 2019 8:53:27 PM cus1156.patients.VisitList findByNPI
+FINE: Visits found by NPI [2]: []
+Apr 29, 2019 8:53:27 PM cus1156.patients.PatientRegSystem getVisitsByDoctor
+FINE: Getting sorted visits by doctor with NPI [2]: []
+Apr 29, 2019 8:53:27 PM cus1156.patients.Menu displayVisitListForDoctor
+INFO: That doctor has not seen any patients
+Apr 29, 2019 8:53:32 PM cus1156.patients.VisitList findByNPI
+FINE: Visits found by NPI [1]: [2|1|01/01/0001
+]
+Apr 29, 2019 8:53:32 PM cus1156.patients.PatientList findBySSN
+FINE: Patient found with ssn [2] : 2|2|2|2|2
+
+Apr 29, 2019 8:53:32 PM cus1156.patients.DoctorList findByNPI
+FINE: Doctor record found with npi[1]: 1|1|1|1
+
+Apr 29, 2019 8:53:32 PM cus1156.patients.PatientRegSystem getVisitsByDoctor
+FINE: Getting sorted visits by doctor with NPI [1]: [2|2|2|2|2|1|1|1|1|Sat Jan 01 00:00:00 IST 1
+]
+Apr 29, 2019 8:53:38 PM cus1156.patients.Menu go
+SEVERE: Badly formed date - use mm/dd/yy
+java.text.ParseException: Unparseable date: "f"
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at cus1156.patients.Menu.displayVisitListForDate(Menu.java:82)
+	at cus1156.patients.Menu.go(Menu.java:64)
+	at cus1156.patients.PatientRegSystemInit.main(PatientRegSystemInit.java:59)
+
