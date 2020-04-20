@@ -1,2 +1,2 @@
 # PatientRegistry
-This program allows a user to check appointment dates, schedule an appointment, make changes to patient information, check doctor information and more. 
+The patient registration system allows a user to both display and enter  information about patients, doctors, and appointments. Information about new patients can be entered, as well as information about new doctors and visits. Appointments can be displayed by doctor, by patient, and by date This component initializes the patient information system by reading in from input files. At the end of a session, all in-memory information is written back to the files, ensuring that any new information entered is made persistent. A menu allows users to select different actions.
